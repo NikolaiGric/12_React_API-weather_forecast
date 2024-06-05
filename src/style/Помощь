@@ -1,0 +1,104 @@
+html{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+body {
+    background-image: url("C:/Users/nikol/OneDrive/Рабочий стол/Демон/Img/banner Image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 75%; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid-container2{
+    height:100vh;
+    display: grid;
+    grid-template-areas:". Header . Navigate Navigate Navigate Navigate Navigate Navigate ."
+                        ". . . . . . . . . ."
+                        ". . content content content content content . . ."
+                        ". . content content content content content . . ."
+                        "footer1 footer1 . . . . . . . .";
+    grid-template-columns: 80px 350px 250px 80px 80px 80px 80px 170px 170px 80px;
+    grid-template-rows: 30px 100px 50px 300px 90px;
+    width: 100%;
+    height: 100%;   
+}
+    .Header{
+        grid-area: Header;
+    }
+    .header2{
+        display: grid;
+    }
+    .Content{
+        display: grid;
+        font-size: 50;
+    }
+    .navigate{
+        display: grid;
+        font-size: 50;
+    }
+    .Navigate{
+        grid-area: Navigate;
+    }
+    .content{
+        grid-area: content;
+    }
+    /* .grid-container1{
+        height:100vh;
+        display: grid;
+        grid-template-areas:". item1 . item2 item3 item4 item5 item6 item7 ."
+                            ". . . . . . . . . ."
+                            ". . Text Text Text Text Text . . ."
+                            ". . . . . . . . . ."
+                            ". . tb1 tb2 tb3 tb4 tb4 . . ."
+                            "foot foot . . . . . . . .";
+        grid-template-columns: 80px 350px 250px 80px 80px 80px 80px 170px 170px 80px;
+        grid-template-rows: 30px 100px 50px 300px 90px 100px;
+        width: 100%;
+        height: 100%;
+    } */
+    
+    /* Стили для мобильных устройств (ширина до 600px, высота до 800px) */
+    @media only screen and (max-width: 600px) and (max-height: 800px) {
+        .grid-container1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body {
+            background-image: url("C:/Users/nikol/OneDrive/Рабочий стол/Демон/Img/banner Image.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 85%; 
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+
+    /* Стили для планшетов (ширина от 601px до 1024px, высота от 801px до 1200px) */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) and (min-height: 801px) and (max-height: 1200px) {
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: 0px 60px 140px 130px 150px 150px;
+            grid-template-rows: 100px 230px 100px 260px 150px 100px;
+        }
+        body {
+            background-image: url("C:/Users/nikol/OneDrive/Рабочий стол/Демон/Img/banner Image.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 75%; 
+            background-position: center;
+            margin: 40px;
+            padding: 0;
+        }
+
+    }
+    /* Стили для устройств с шириной экрана от 1025px и высотой от 1201px */
+    @media only screen and (min-width: 1025px) and (min-height: 1201px) {
+
+    }

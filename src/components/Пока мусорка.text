@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Pr4.css" >
+        <title>Сайт для соседей с grid</title>
+    </head>
+    <body>
+        <div class="grid-container1">
+                <div class="item1">
+                    <strong>FLATMATE</strong>
+                </div>
+                        <a class="item item2" href="">Home</a> 
+                        <a class="item item3" href="">About us</a> 
+                        <a class="item item4" href="">Location</a> 
+                        <a class="item item5" href="">Reviews</a>
+                        <button class="item item6">Find Room</button>
+                        <button class="item item7">Sign in</button>
+                        <strong class="Text">Find your next perfect roommates from your community</strong>
+                        <input type="text" name="example" list="exampleList1" class="tb1">
+                        <datalist id="exampleList1">
+                            <option value="A">  
+                            <option value="B">
+                        </datalist>
+                        <input type="text" name="example" list="exampleList2" class="tb2">
+                        <datalist id="exampleList2">
+                            <option value="A">  
+                            <option value="B">
+                        </datalist>
+                        <input type="text" name="example" list="exampleList3" class="tb3">
+                        <datalist id="exampleList3">
+                            <option value="A">  
+                            <option value="B">
+                        </datalist>
+                        <button class="tb4">Search</button>
+                        <footer className="foot">The Society of Gardeners 2024</footer>
+                    </div>
+    </body>
+    </html>
+
+
+
+
+
+
+    .App {
+    text-align: center;
+    }
+
+    .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+    }
+
+    .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    }
+
+    .App-link {
+    color: #61dafb;
+    }
+
+    @keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+
+
+
+
+
+    import logo from './logo.svg';
+    import './App.css';
+
+    function App() {
+    return (
+        <div className="App">
+        <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+            Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Learn React
+            </a>
+        </header>
+        </div>
+    );
+    }
+
+    export default App;
